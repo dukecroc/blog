@@ -1,0 +1,7 @@
+*.log
+*.DS_Store
+*.sass-cache
+*.jekyll-cache
+*.code-workspace
+*.sublime-workspace
+*.sublime-project
