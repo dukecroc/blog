@@ -1,18 +1,24 @@
-title               : "dukecroc"
-tagline             : "A personal blog."
-description         : "This is a personal blog by Croc."
-url                 : "http://dukecroc.com" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl             : "" # the subpath of your site, e.g. /blog
-email               : dukecroc@gmail.com
+title               : dukecroc
+tagline             : A personal blog.
+description         : This is a personal blog by Croc.
+url                 : http://dukecroc.com # the base hostname & protocol for your site, e.g. http://example.com
+baseurl             : "" # the subpath of your site, e.g. "/blog" with be => http://example.com/blog
 lang                : zh-Hant-TW
 
-author:
-  name              : dukecroc
+# Social Links
+contacts:
+  email             : dukecroc@gmail.com
+  facebook          : ""
   twitter           : dukecroc
+  instagram         : dukecroc
 
 show_excerpts       : true
-disable_disk_cache  : true # Disable caching of content to disk in order to skip creating a .jekyll-cache or similar directory at the source to avoid interference with virtual environments and third-party directory watchers. Caching to disk is always disabled in safe mode.
-ignore_theme_config : true # Jekyll 4.0 started allowing themes to bundle a _config.yml to simplify theme-onboarding for new users. In the unfortunate situation that importing a bundled theme configuration messes up the merged site-configuration, the user can configure Jekyll to not import the theme-config entirely.
+
+# Disable caching of content to disk in order to skip creating a .jekyll-cache or similar directory at the source to avoid interference with virtual environments and third-party directory watchers. Caching to disk is always disabled in safe mode.
+disable_disk_cache  : true
+
+# Jekyll 4.0 started allowing themes to bundle a _config.yml to simplify theme-onboarding for new users. In the unfortunate situation that importing a bundled theme configuration messes up the merged site-configuration, the user can configure Jekyll to not import the theme-config entirely.
+ignore_theme_config : true
 
 
 
@@ -22,6 +28,7 @@ ignore_theme_config : true # Jekyll 4.0 started allowing themes to bundle a _con
 # Alternative settings for these options can be explicitly specified 
 # in the configuration file or on the command-line.
 # -------------------------
+
 # Where things are
 source              : .
 destination         : ./_build # default: ./_site
@@ -32,8 +39,6 @@ includes_dir        : _includes
 sass:
   sass_dir: _sass
 collections:
-  tag:
-    output          : true
   posts:
     output          : true
 
