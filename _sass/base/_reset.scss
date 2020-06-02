@@ -1,0 +1,93 @@
+//
+//
+//     .g8"""bgd  .M"""bgd  .M"""bgd     `7MM"""Mq.                            mm
+//   .dP'     `M ,MI    "Y ,MI    "Y       MM   `MM.                           MM
+//   dM'       ` `MMb.     `MMb.           MM   ,M9  .gP"Ya  ,pP"Ybd  .gP"Ya mmMMmm
+//   MM            `YMMNq.   `YMMNq.       MMmmdM9  ,M'   Yb 8I   `" ,M'   Yb  MM
+//   MM.         .     `MM .     `MM       MM  YM.  8M"""""" `YMMMa. 8M""""""  MM
+//   `Mb.     ,' Mb     dM Mb     dM       MM   `Mb.YM.    , L.   I8 YM.    ,  MM
+//     `"bmmmd'  P"Ybmmd"  P"Ybmmd"      .JMML. .JMM.`Mbmmd' M9mmmP'  `Mbmmd'  `Mbmo
+//
+//
+// Minimal CSS Reset
+*, *:before, *:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+body, h1, h2, h3, h4, h5, h6, p, img, ol, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+}
+
+main {
+  display: block; // For IE 11
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+b, i, em, strong {
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="search"],
+input[type="submit"],
+input[readonly],
+input[disabled],
+label,
+button,
+select,
+textarea {
+  margin: 0; // Remove default margin-top & bottom 2px on safari
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  box-shadow: none; // Remove firefox ':-moz-ui-invalid' styles
+  opacity: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+}
+
+/* Start of "Remove spinner on input of number[Firefox/Chrome/Safari]" */
+  // Firefox
+  input[type='number'] {
+      -moz-appearance:textfield;
+  }
+
+  // Webkit browsers like Safari and Chrome
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+/* End of "Remove spinner on input of number[Firefox/Chrome/Safari]" */

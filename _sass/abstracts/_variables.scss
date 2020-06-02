@@ -1,0 +1,123 @@
+//
+//
+//    .M"""bgd      db       .M"""bgd  .M"""bgd
+//   ,MI    "Y     ;MM:     ,MI    "Y ,MI    "Y
+//   `MMb.        ,V^MM.    `MMb.     `MMb.
+//     `YMMNq.   ,M  `MM      `YMMNq.   `YMMNq.
+//   .     `MM   AbmmmqMA   .     `MM .     `MM
+//   Mb     dM  A'     VML  Mb     dM Mb     dM
+//   P"Ybmmd" .AMA.   .AMMA.P"Ybmmd"  P"Ybmmd"
+//
+//
+//
+//                                  ,,           ,,        ,,
+//   `7MMF'   `7MF'                 db          *MM      `7MM
+//     `MA     ,V                                MM        MM
+//      VM:   ,V ,6"Yb.  `7Mb,od8 `7MM   ,6"Yb.  MM,dMMb.  MM  .gP"Ya  ,pP"Ybd
+//       MM.  M'8)   MM    MM' "'   MM  8)   MM  MM    `Mb MM ,M'   Yb 8I   `"
+//       `MM A'  ,pm9MM    MM       MM   ,pm9MM  MM     M8 MM 8M"""""" `YMMMa.
+//        :MM;  8M   MM    MM       MM  8M   MM  MM.   ,M9 MM YM.    , L.   I8
+//         VF   `Moo9^Yo..JMML.   .JMML.`Moo9^Yo.P^YbmdP'.JMML.`Mbmmd' M9mmmP'
+//
+//
+
+// Spacing
+$spacing-xxs                  : 4px;
+$spacing-xs                   : 10px;
+$spacing-s                    : 20px;
+$spacing-normal               : 40px;
+$spacing-l                    : 80px;
+$spacing-xl                   : 120px;
+$spacing-xxl                  : 240px;
+
+
+// Font Size
+$font-size-xxs                : 12px;
+$font-size-xs                 : 14px;
+$font-size-s                  : 15px;
+$font-size-normal             : 16px;
+$font-size-l                  : 18px;
+$font-size-xl                 : 24px;
+$font-size-xxl                : 36px;
+$font-size-xxxl               : 48px;
+
+
+// Font Family
+$font-family-default          : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, 'Droid Sans', 'Helvetica Neue', Helvetica, Arial;
+$body-font-family             : 'Roboto', 'Noto Sans TC', $font-family-default, 'Microsoft JhengHei', sans-serif;
+$font-family-pacifico         : 'Pacifico', cursive;
+// $font-family-leckerli         : 'Leckerli One', cursive;
+$font-family-montserrat       : 'Montserrat', sans-serif;
+
+
+// Colors
+$primary-color                : #339ef5;
+// $primary-color-lightest       : #fbfffb;
+// $primary-color-darken         : #0f3f39;
+
+// $secondary-color              : #008ec5;
+// $secondary-color-darken       : #1f4880;
+
+$link-color                   : $primary-color;
+
+$yellow                       : #ffee2f;  // Golden Fizz
+$green                        : #9bdd09;  // Pistachio
+$red                          : #f84056;  // Radical Red
+
+$bright                       : #fff;
+$dark                         : #000;
+
+$heading-color                : #222;
+$words-color-darken           : $heading-color;
+$words-color                  : #444;
+$words-color-lighten          : #888;
+
+$remark-color                 : #aaa;
+$dividing-color               : #cfcfcf;
+$gray-lighten                 : #efefef;
+
+$body-bg-color                : #f7f7f7;
+
+
+// Z-index
+$zindex-header-fixed          : 99;
+$zindex-panel                 : 98;
+$zindex-sticky                : 97;
+$zindex-upper                 :  2;
+$zindex-overlay               :  1;
+$zindex-prevent-webkit-bug    :  1;
+
+
+// Layout
+$layout-width                 : 100%;
+$layout-max-width             : 1920px;
+$iphone-act-bar-height        : 112px;
+$sidebar-width                : 30vw;
+
+
+// Media Queries, Breakpoints
+$bp-desktop-xxhdpi            : 1920px;
+$bp-desktop-xhdpi             : 1600px;
+$bp-desktop-hdpi              : 1440px;
+$bp-ipad-pro12-landscape      : 1336px; // iPad Pro 12.9"
+$bp-desktop-mdpi              : 1280px;
+$bp-ipad-pro10-landscape      : 1112px; // iPad Pro 10.5"
+$bp-desktop                   : 1024px;
+$bp-960                       : 960px;
+$bp-ipad-pro-portrait         : 834px; // iPad Pro 10.5″
+$bp-iphonex-landscape         : 812px; // iPhone X
+$bp-ipad-portrait             : 768px; // iPad 9.7"
+$bp-iphone-plus-landscape     : 736px; // iPhone 8+, 7+
+$bp-iphone-landscape          : 667px; // iPhone 8, 7, 6s+, 6s, 6s, 6
+$bp-old-iphone-landscape      : 568px; // iPhone 5, SE
+$bp-old-phone-landscape       : 480px; // iPhone 4, 3G
+$bp-iphone-plus-portrait      : 414px; // iPhone 8+, 7+
+$bp-iphone-portrait           : 375px; // iPhone X, 8, 7, 6s+, 6+, 6s, 6
+$bp-old-phone-portrait        : 320px; // iPhone 5, 4, SE, 3G
+
+
+// Better transition-timing-function by cubic-bezier
+$ease                         : cubic-bezier(.63,.01,.56,.99);
+$ease-in                      : cubic-bezier(.82,0,1,1);
+$ease-out                     : cubic-bezier(0,0,.18,1);
+$easeOutBack                  : cubic-bezier(.22,1.48,.67,.97);

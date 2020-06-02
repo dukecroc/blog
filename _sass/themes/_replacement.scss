@@ -1,0 +1,46 @@
+//
+//                                 ,,
+//   `7MM"""Mq.                  `7MM                                                                mm
+//     MM   `MM.                   MM                                                                MM
+//     MM   ,M9  .gP"Ya `7MMpdMAo. MM   ,6"Yb.  ,p6"bo   .gP"Ya `7MMpMMMb.pMMMb.  .gP"Ya `7MMpMMMb.mmMMmm
+//     MMmmdM9  ,M'   Yb  MM   `Wb MM  8)   MM 6M'  OO  ,M'   Yb  MM    MM    MM ,M'   Yb  MM    MM  MM
+//     MM  YM.  8M""""""  MM    M8 MM   ,pm9MM 8M       8M""""""  MM    MM    MM 8M""""""  MM    MM  MM
+//     MM   `Mb.YM.    ,  MM   ,AP MM  8M   MM YM.    , YM.    ,  MM    MM    MM YM.    ,  MM    MM  MM
+//   .JMML. .JMM.`Mbmmd'  MMbmmd'.JMML.`Moo9^Yo.YMbmd'   `Mbmmd'.JMML  JMML  JMML.`Mbmmd'.JMML  JMML.`Mbmo
+//                        MM
+//                      .JMML.
+
+// Prism.js
+pre.highlight {
+  color: #f8f8f2;
+	background: #272822;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre.highlight {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+pre.highlight code {
+  margin-right: 1em;
+}

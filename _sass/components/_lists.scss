@@ -1,0 +1,59 @@
+//
+//                 ,,
+//   `7MMF'        db            mm
+//     MM                        MM
+//     MM        `7MM  ,pP"Ybd mmMMmm
+//     MM          MM  8I   `"   MM
+//     MM      ,   MM  `YMMMa.   MM
+//     MM     ,M   MM  L.   I8   MM
+//   .JMMmmmmMMM .JMML.M9mmmP'   `Mbmo
+//
+//
+ol.ordered,
+ul.unordered,
+article .entry-content ol,
+article .entry-content ul {
+  margin: 1em 0;
+
+  ol, ul {
+    padding-left: 1em;
+  }
+
+  li {
+    &:last-child {
+      margin-bottom: 2em;
+    }
+
+    & + li { margin-top: 1em; }
+  }
+}
+
+ol.ordered,
+article .entry-content ol {
+  padding-left: 1.5em;
+  list-style-type: decimal;
+}
+
+ul.unordered,
+article .entry-content ul {
+  padding-left: 1.5em;
+  list-style-type: none;
+
+  > li {
+    position: relative;
+
+    // Square block
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 12px - 3px; // half-line-height - square-height
+      left: -15px;
+      width: 6px;
+      height: 6px;
+      background-color: $dark;
+      font-size: 0;
+      line-height: 0;
+    }
+  }
+}

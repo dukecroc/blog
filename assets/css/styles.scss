@@ -1,0 +1,58 @@
+---
+---
+@charset "UTF-8";
+
+
+// SCSS Variables
+@import "abstracts/variables";
+
+
+// SCSS Mixins
+@import "abstracts/mixins";
+
+
+// CSS Styles Reset
+@import "base/reset";
+
+
+// Webfonts
+@import "base/fonts";
+
+
+// Custom Animation
+@import "base/animation";
+
+
+// Shared base UI Styles
+@import "base/common";
+@import "base/typography";
+
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+
+
+// Components
+@import "components/accordion";
+@import "components/article";
+@import "components/breadcrumb";
+@import "components/buttons";
+@import "components/lists";
+@import "components/pagination";
+@import "components/social";
+@import "components/sticky";
+
+
+// Page
+@import "pages/home/home";
+@import "pages/others/page-not-found";
+
+
+// Plugins
+// @import "vendors/animate"; // CSS Animate by Daniel Eden.
+
+
+// Replace Styles In Plugins
+@import "themes/replacement"
+

@@ -1,0 +1,29 @@
+
+  <header class="site-header">
+    <div class="wrapper">
+      <h1>
+        <a class="logo" href="{{ '/' | absolute_url }}" title="Back to home">
+          {{ site.title }}
+        </a>
+      </h1>
+
+      {% if site.pages.size > 0 %}
+        <div class="page-links">
+          {% for page in site.pages limit:5 %}
+            {% if page.layout == 'page' %}
+              <a class="page-link" href="{{ page.url | relative_url }}">
+                {{ page.title | escape }}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <div class="social-links">
+        <a class="facebook" href="" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a class="twitter" href="" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a class="instagram" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="rss" href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </div>
+    </div>
+  </header>

@@ -1,14 +1,10 @@
 ---
 layout: post
-title:  "DeviceMotionEvent"
-date:   2020-05-15 16:48:18 +0800
-categories: jekyll update
+title:  "DeviceMotionEvent.requestPermission 在各瀏覽器上的 typeof 回傳數值"
+date:   2020-05-16 16:48:18 +0800
+categories: js
+tag: js ios motion
 ---
-## DeviceMotionEvent.requestPermission 在各瀏覽器上的 typeof 回傳數值
-
-<hr>
-
-<br>
 
 ### 為啥會用到這鬼東西：
 
@@ -16,7 +12,7 @@ iOS 13+ 以後的版在使用 DeviceMotionEvent 動作感測器（陀螺儀、�
 
 reference: https://dev.to/li/how-to-requestpermission-for-devicemotion-and-deviceorientation-events-in-ios-13-46g2
 
-
+<!--more-->
 <br>
 
 ### typeof DeviceMotionEvent.requestPermission 的回傳值

@@ -1,0 +1,31 @@
+//
+//
+//   `7MM"""YMM                   mm
+//     MM    `7                   MM
+//     MM   d  ,pW"Wq.   ,pW"Wq.mmMMmm .gP"Ya `7Mb,od8
+//     MM""MM 6W'   `Wb 6W'   `Wb MM  ,M'   Yb  MM' "'
+//     MM   Y 8M     M8 8M     M8 MM  8M""""""  MM
+//     MM     YA.   ,A9 YA.   ,A9 MM  YM.    ,  MM
+//   .JMML.    `Ybmd9'   `Ybmd9'  `Mbmo`Mbmmd'.JMML.
+//
+//
+footer.site-footer {
+  margin-left: $sidebar-width;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 736px;
+    margin: 0 $spacing-l;
+    padding: $spacing-s 0;
+    border-top: 1px solid $dividing-color;
+  }
+
+  .copyright {
+    color: $words-color-lighten;
+    font-size: $font-size-xxs;
+    line-height: 1em;
+  }
+}

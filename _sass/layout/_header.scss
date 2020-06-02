@@ -1,0 +1,37 @@
+//
+//                                        ,,
+//   `7MMF'  `7MMF'                     `7MM
+//     MM      MM                         MM
+//     MM      MM  .gP"Ya   ,6"Yb.   ,M""bMM  .gP"Ya `7Mb,od8
+//     MMmmmmmmMM ,M'   Yb 8)   MM ,AP    MM ,M'   Yb  MM' "'
+//     MM      MM 8M""""""  ,pm9MM 8MI    MM 8M""""""  MM
+//     MM      MM YM.    , 8M   MM `Mb    MM YM.    ,  MM
+//   .JMML.  .JMML.`Mbmmd' `Moo9^Yo.`Wbmd"MML.`Mbmmd'.JMML.
+//
+//
+header.site-header {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: $sidebar-width;
+  background-color: rgba($green, .9);
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 384px;
+    height: 100%;
+    padding: $spacing-normal;
+  }
+
+  @import "header__logo";
+  @import "header__menu";
+  @import "header__social";
+  @import "header__hamburger";
+
+}

@@ -1,0 +1,63 @@
+
+  //    _   _                 _
+  //   | | | | __ _ _ __ ___ | |__  _   _ _ __ __ _  ___ _ __
+  //   | |_| |/ _` | '_ ` _ \| '_ \| | | | '__/ _` |/ _ \ '__|
+  //   |  _  | (_| | | | | | | |_) | |_| | | | (_| |  __/ |
+  //   |_| |_|\__,_|_| |_| |_|_.__/ \__,_|_|  \__, |\___|_|
+  //                                          |___/
+  .hamburger {
+    display: none;
+    position: relative;
+    z-index: $zindex-upper;
+    width: 60px;
+    height: 100%;
+    background-color: transparent;
+    font-size: 0;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .25s $ease-out;
+
+    // Active status
+    @at-root .rwd-menu-active & {
+      // background-color: $rwd-menu-bg-color;
+    }
+
+    // Display on small screens
+    @media screen and (max-width: $bp-desktop-mdpi - 1) {
+      display: block;
+    }
+
+    // Three lines hamburger icon
+    span {
+      display: block;
+      position: absolute;
+      left: 50%;
+      width: 28px;
+      height: 1px;
+      margin-left: -14px;
+      background-color: $bright;
+      opacity: 1;
+      transform: rotate(0deg);
+      @include default-transition($duration: .25s);
+
+      &:nth-child(1) { top: 50%; margin-top: -8px; }
+      &:nth-child(4) { top: 50%; margin-top: 8px; }
+
+      &:nth-child(2),
+      &:nth-child(3) { @include pos-center(vertical); }
+
+      // Transform to cross icon
+      @at-root .rwd-menu-active & {
+        transition: all .25s $ease-out;
+
+        &:nth-child(1),
+        &:nth-child(4) { left: 50%; right: 50%; opacity: 0; }
+        
+        &:nth-child(1),
+        &:nth-child(4) { margin-top: 0; }
+
+        &:nth-child(2) { transform: rotate(45deg);  }
+        &:nth-child(3) { transform: rotate(-45deg); }
+      }
+    }
+  }

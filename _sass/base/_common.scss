@@ -1,0 +1,118 @@
+//
+//
+//     .g8"""bgd
+//   .dP'     `M
+//   dM'       ` ,pW"Wq.`7MMpMMMb.pMMMb.  `7MMpMMMb.pMMMb.  ,pW"Wq.`7MMpMMMb.
+//   MM         6W'   `Wb MM    MM    MM    MM    MM    MM 6W'   `Wb MM    MM
+//   MM.        8M     M8 MM    MM    MM    MM    MM    MM 8M     M8 MM    MM
+//   `Mb.     ,'YA.   ,A9 MM    MM    MM    MM    MM    MM YA.   ,A9 MM    MM
+//     `"bmmmd'  `Ybmd9'.JMML  JMML  JMML..JMML  JMML  JMML.`Ybmd9'.JMML  JMML.
+//
+//
+
+// Global CSS Variables
+:root {
+}
+
+// Default Styles
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+
+body {
+  background-color: $body-bg-color;
+  color: $words-color;
+  font-family: $body-font-family;
+  font-size: $font-size-normal; // 16px
+  font-weight: 400;
+  line-height: 1.5em; // 16px * 1.5em = 24px
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  margin-left: $sidebar-width;
+
+  .wrapper {
+    max-width: 896px;
+    padding: $spacing-normal $spacing-l;
+  }
+}
+
+
+a {
+  color: inherit;
+}
+
+
+
+
+// For debug elements layout
+body.debug-layout * { background-color: rgba(255,0,0,.2); }
+body.debug-layout * * { background-color: rgba(0,255,0,.2); }
+body.debug-layout * * * { background-color: rgba(0,0,255,.2); }
+body.debug-layout * * * * { background-color: rgba(255,0,255,.2); }
+body.debug-layout * * * * * { background-color: rgba(0,255,255,.2); }
+body.debug-layout * * * * * * { background-color: rgba(255,255,0,.2); }
+body.debug-layout * * * * * * * { background-color: rgba(255,0,0,.2); }
+body.debug-layout * * * * * * * * { background-color: rgba(0,255,0,.2); }
+body.debug-layout * * * * * * * * * { background-color: rgba(0,0,255,.2); }
+
+
+
+
+// For debug elements centering
+.debug-centerline:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 9999;
+  width: 1px;
+  background-color: rgba(#f36,.8);
+}
+
+
+// Share Styles
+.wrapper {
+  position: relative;
+}
+
+
+.show.show.show.show.show.show.show.show.show.show:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) { display: block; }
+.hide.hide.hide.hide.hide.hide.hide.hide.hide.hide:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) { display: none;  }
+
+.no-scroll { 
+  /*
+  ** == CSS specific to iOS devices ==
+  ** It works because only Safari Mobile implements -webkit-overflow-scrolling: 
+  ** https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling
+  */
+  @supports (-webkit-overflow-scrolling: touch) {
+    overflow: hidden; // Need for bodyScrollLock.js to lock <html> tag scroll behavior on iOS Safari
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &.hide {
+    display: block;
+    width: 0.01px;
+    height: 0.01px;
+    overflow: hidden;
+    font-size: 0.01px;
+    line-height: 0.01px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  strong {
+    font-weight: normal;
+  }
+}

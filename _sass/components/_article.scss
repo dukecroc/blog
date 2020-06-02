@@ -1,0 +1,131 @@
+//
+//                                   ,,          ,,
+//         db                 mm     db        `7MM
+//        ;MM:                MM                 MM
+//       ,V^MM.    `7Mb,od8 mmMMmm `7MM  ,p6"bo  MM  .gP"Ya
+//      ,M  `MM      MM' "'   MM     MM 6M'  OO  MM ,M'   Yb
+//      AbmmmqMA     MM       MM     MM 8M       MM 8M""""""
+//     A'     VML    MM       MM     MM YM.    , MM YM.    ,
+//   .AMA.   .AMMA..JMML.     `Mbmo.JMML.YMbmd'.JMML.`Mbmmd'
+//
+//
+
+article {
+  display: block;
+  padding: $spacing-normal;
+  background-color: $bright;
+  box-shadow: 0 8px 16px rgba($dark, .02);
+
+  header {
+    padding-bottom: $spacing-normal - 8px;
+    border-bottom: 1px solid $dividing-color;
+
+    & + * {
+      margin-top: $spacing-s;
+    }
+
+    .date {
+      color: $remark-color;
+      font-size: 14px;
+      line-height: 1em;
+    }
+
+    .date + h1 {
+      margin-top: 6px;
+    }
+
+    h1 {
+      font-size: $font-size-xxl;
+      line-height: 1.3333em;
+    }
+  }
+
+  .entry-content {
+    h1 { font-size: $font-size-xxl; } // 36px
+    h2 { font-size: $font-size-xxl - 4; } // 32px
+    h3 { font-size: $font-size-xl;  } // 24px
+    h4 { font-size: $font-size-l; } // 18px
+    h5 { font-size: $font-size-normal; } // 16px
+    h6 { font-size: $font-size-normal; } // 16px
+
+    h1, h2, h3, h4, h5, h6 { line-height: 1.25em; }
+    h1, h2, h3, h4, h5 { color: $heading-color; }
+    h1, h2, h3, h4 { font-weight: 400; }
+    h6 { color: $remark-color; }
+
+    * + h1,
+    * + h2,
+    * + h3,
+    * + h4,
+    * + h5,
+    * + h6 {
+      margin-top: $spacing-l;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      & + p {
+        margin-top: 1em;
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      & + ol,
+      & + ul {
+        margin-top: 1.5em;
+      }
+    }
+
+    li, p {
+      color: $words-color;
+      font-size: $font-size-l; // 18px
+      line-height: 1.7777em; // 32px
+    }
+
+    * + p {
+      margin-top: 1.7777em;
+    }
+
+    img, video, iframe {
+      display: block;
+      width: 100%;
+    }
+
+    video, iframe {
+      margin: $spacing-normal auto 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: $link-color;
+
+      /* These are technically the same, but use both */
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      /* Instead use this non-standard one: */
+      word-break: break-word;
+      /* This is the dangerous one in WebKit, as it breaks things wherever */
+      -ms-word-break: break-all;
+      word-break: break-all;
+
+      @include default-transition($duration: .2s);
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: $link-color;
+          color: $bright;
+        }
+      }
+    }
+
+    hr {
+      margin: $spacing-l 0;
+      border-width: 1px 0 0;
+      border-style: solid;
+      border-color: $dividing-color;
+    }
+  }
+}

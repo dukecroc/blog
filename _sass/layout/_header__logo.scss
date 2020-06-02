@@ -1,0 +1,18 @@
+
+  //    _
+  //   | |    ___   __ _  ___
+  //   | |   / _ \ / _` |/ _ \
+  //   | |__| (_) | (_| | (_) |
+  //   |_____\___/ \__, |\___/
+  //               |___/
+  a.logo {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $bright;
+    font-size: $font-size-xxl;
+    line-height: 1em;
+    font-family: $font-family-pacifico;
+    // text-transform: uppercase;
+  }

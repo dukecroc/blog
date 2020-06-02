@@ -1,0 +1,32 @@
+//
+//                               ,,                                    ,,
+//         db                    db                             mm     db
+//        ;MM:                                                  MM
+//       ,V^MM.    `7MMpMMMb.  `7MM  `7MMpMMMb.pMMMb.   ,6"Yb.mmMMmm `7MM  ,pW"Wq.`7MMpMMMb.
+//      ,M  `MM      MM    MM    MM    MM    MM    MM  8)   MM  MM     MM 6W'   `Wb MM    MM
+//      AbmmmqMA     MM    MM    MM    MM    MM    MM   ,pm9MM  MM     MM 8M     M8 MM    MM
+//     A'     VML    MM    MM    MM    MM    MM    MM  8M   MM  MM     MM YA.   ,A9 MM    MM
+//   .AMA.   .AMMA..JMML  JMML..JMML..JMML  JMML  JMML.`Moo9^Yo.`Mbmo.JMML.`Ybmd9'.JMML  JMML.
+//
+//
+
+// Loading Spinner
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+
+
+// Floating
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

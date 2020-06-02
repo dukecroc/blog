@@ -1,14 +1,14 @@
 ---
-layout: "post"
+layout: post
+title:  "[SVG] 在 CSS background-image 屬性中直接使用 SVG code"
+date:   2020-05-13 17:48:18 +0800
+categories: css
+tag: css svg background-image
 ---
-
-
-
-# [SVG] 在 CSS background-image 屬性中直接使用 SVG code
 
 如果想要直接在 CSS background-image 的 url 屬性中直接插入 SVG 圖檔的原始碼，常用於在 `:hover` 狀態時只是想改變 SVG 的顏色時，可以如以下這般寫法：
 
-```CSS
+```SCSS
 // Original Usage
 .btn-fb {
     background-image: url('../img/icon_facebook_white.svg');
@@ -16,9 +16,6 @@ layout: "post"
 .btn-fb:hover {
     background-image: url('../img/icon_facebook_blue.svg');
 }
-
-
-
 
 // SVG Code in 'url()' Usage
 .btn-fb {
@@ -30,24 +27,19 @@ layout: "post"
 }
 ```
 
-
-
-####需要特別注意的一個細節：
+#### 需要特別注意的一個細節：
 
 顏色 HEX Code 的「＃」號在 `url()` 當中必須轉換成「%23」才能被正確讀取，例：
 
-````css
-// HTML 中的原始寫法
+##### HTML 中的原始寫法:
+````html
 <svg fill="#ffffff" ...></svg>
+````
 
-// 在 CSS background-image 中的寫法
+#### 在 CSS background-image 中的寫法:
+````SCSS
 background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" ...></svg>');
 ````
 
-
-
-
-
-####Reference:
-
-https://stackoverflow.com/questions/13367868/modify-svg-fill-color-when-being-served-as-background-image
+#### Reference:
+[https://stackoverflow.com/questions/13367868/modify-svg-fill-color-when-being-served-as-background-image](https://stackoverflow.com/questions/13367868/modify-svg-fill-color-when-being-served-as-background-image)
