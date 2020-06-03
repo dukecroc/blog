@@ -2,8 +2,8 @@
 layout: post
 title:  "placeholder page for testing"
 date:   2020-05-13 16:48:18 +0800
-categories:
-tag: demo temp
+categories: temp
+tags: demo temp
 ---
 blablabla...
 blablabla...

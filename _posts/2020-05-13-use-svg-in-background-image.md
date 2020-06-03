@@ -3,7 +3,7 @@ layout: post
 title:  "[SVG] 在 CSS background-image 屬性中直接使用 SVG code"
 date:   2020-05-13 17:48:18 +0800
 categories: css
-tag: css svg background-image
+tags: css svg background-image
 ---
 
 如果想要直接在 CSS background-image 的 url 屬性中直接插入 SVG 圖檔的原始碼，常用於在 `:hover` 狀態時只是想改變 SVG 的顏色時，可以如以下這般寫法：

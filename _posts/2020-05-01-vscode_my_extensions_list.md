@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "VS Code - My Extensions List"
-date:   2020-06-01 16:29:00 +0800
+date:   2020-05-01 16:29:00 +0800
 categories: vscode
-tag: vscode extension
+tags: vscode extension
 ---
 
 - Name: ASCIIDecorator

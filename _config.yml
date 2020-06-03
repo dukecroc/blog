@@ -5,7 +5,7 @@ url                 : http://dukecroc.com # the base hostname & protocol for you
 baseurl             : "" # the subpath of your site, e.g. "/blog" with be => http://example.com/blog
 lang                : zh-Hant-TW
 
-# Social Links
+## Social Links
 contacts:
   email             : dukecroc@gmail.com
   facebook          : ""
@@ -23,29 +23,31 @@ ignore_theme_config : true
 
 
 
-# [Default Configuration]
-# Jekyll runs with the following configuration options by default. 
-# Alternative settings for these options can be explicitly specified 
-# in the configuration file or on the command-line.
-# -------------------------
+## [Default Configuration]
+## Jekyll runs with the following configuration options by default. 
+## Alternative settings for these options can be explicitly specified 
+## in the configuration file or on the command-line.
+## -------------------------
 
-# Where things are
-source              : .
+## Where things are
+# source              : .
 destination         : ./_build # default: ./_site
-plugins_dir         : _plugins
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
-sass:
-  sass_dir: _sass
+# plugins_dir         : _plugins
+# layouts_dir         : _layouts
+# data_dir            : _data
+# includes_dir        : _includes
+# sass:
+  # sass_dir: _sass
 collections:
-  posts:
-    output          : true
+  # posts:
+  #   output          : true
+  category: # This allows you to use the collection throughout your templates
+    output          : true # This allows us to generate pages for each category where we can list all posts under that category. 
 
 
-# Handling Reading
-safe                : false
-include             : [".htaccess"]
+## Handling Reading
+# safe                : false
+# include             : [".htaccess"]
 exclude             : 
   - .sass-cache/
   - .jekyll-cache/
@@ -53,76 +55,76 @@ exclude             :
   - Gemfile
   - Gemfile.lock
   - Gemfile.lock
-  - jekyll_blog.code-workspace
-  - jekyll_blog.sublime-projec
-  - jekyll_blog.sublime-workspace
-keep_files          : [".git", ".svn"]
-encoding            : "utf-8"
-markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
-strict_front_matter : false
+  - .code-workspace
+  - .sublime-projec
+  - .sublime-workspace
+# keep_files          : [".git", ".svn"]
+# encoding            : "utf-8"
+# markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
+# strict_front_matter : false
 
-# Filtering Content
-show_drafts         : null
-limit_posts         : 0
-future              : false
-unpublished         : false
+## Filtering Content
+# show_drafts         : null
+# limit_posts         : 0
+# future              : false
+# unpublished         : false
 
-# Plugins
-whitelist           : []
+## Plugins
+# whitelist           : []
 plugins             : 
   - jekyll-paginate
   - jekyll-feed
 
-# Conversion
-markdown            : kramdown
-highlighter         : rouge
-lsi                 : false
+## Conversion
+# markdown            : kramdown
+# highlighter         : rouge
+# lsi                 : false
 excerpt_separator   : <!--more-->  # default: "\n\n"
-incremental         : false
+# incremental         : false
 
-# Serving
-detach              : false
-port                : 4000
-host                : 127.0.0.1
-baseurl             : "" # does not include hostname
-show_dir_listing    : false
+## Serving
+# detach              : false
+# port                : 4000
+# host                : 127.0.0.1
+# baseurl             : "" # does not include hostname
+# show_dir_listing    : false
 
-# Outputting
-permalink           : date
-paginate            : 10
-paginate_path       : /page:num
-timezone            : null
+## Outputting
+permalink           :  "/:categories/:title" # default: "date"
+paginate            : 5
+# paginate_path       : /page:num
+# timezone            : null
 
-quiet               : false
-verbose             : false
-defaults            : []
+# quiet               : false
+# verbose             : false
+# defaults            : []
 
-liquid:
-  error_mode        : warn
-  strict_filters    : false
-  strict_variables  : false
+# liquid:
+  # error_mode        : warn
+  # strict_filters    : false
+  # strict_variables  : false
 
 # Markdown Processors
-rdiscount:
-  extensions        : []
+# rdiscount:
+  # extensions        : []
 
-redcarpet:
-  extensions        : []
+# redcarpet:
+  # extensions        : []
 
-kramdown:
-  auto_ids          : true
-  entity_output     : as_char
-  toc_levels        : [1, 2, 3, 4, 5, 6]
-  smart_quotes      : lsquo,rsquo,ldquo,rdquo
-  input             : GFM
-  hard_wrap         : false
-  footnote_nr       : 1
-  show_warnings     : false
-
-
+# kramdown:
+  # auto_ids          : true
+  # entity_output     : as_char
+  # toc_levels        : [1, 2, 3, 4, 5, 6]
+  # smart_quotes      : lsquo,rsquo,ldquo,rdquo
+  # input             : GFM
+  # hard_wrap         : false
+  # footnote_nr       : 1
+  # show_warnings     : false
 
 
-# [Front Matter Defaults]
+
+
+## Front Matter Defaults Setting Example
 # defaults:
 #   -
 #     scope:
@@ -130,3 +132,11 @@ kramdown:
 #       # type: "posts" # previously `post` in Jekyll 2.2.
 #     values:
 #       layout: "page"
+
+defaults:
+  - # For our convenience, we’ll add a default layout property to each category.
+    scope:
+      path          : ""
+      type          : category
+    values:
+      layout        : "category" # This sets the default layout to category for all elements of our category collection.
